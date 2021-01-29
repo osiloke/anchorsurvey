@@ -42,9 +42,10 @@
   },
   "description": "SurveJS Vue.js example starter project",
   "dependencies": {
-    "vue": "^2.6.11",
+    "@vue/cli-plugin-babel": "4.1.1",
+    "axios": "0.21.1",
     "survey-vue": "^1.7.19",
-    "@vue/cli-plugin-babel": "4.1.1"
+    "vue": "^2.6.11"
   },
   "browserslist": [
     "> 1%",
