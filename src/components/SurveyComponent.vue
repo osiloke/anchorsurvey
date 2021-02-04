@@ -17,6 +17,55 @@ export default {
     const json = {
       pages: [
         {
+          name: "page1",
+          navigationTitle: "Customer",
+          navigationDescription: "Customer's info",
+          elements: [
+            {
+              type: "image",
+              name: "first_page_image",
+              imageLink:
+                "http://anchortelecoms.com/wp-content/uploads/2019/02/Anchor-Telecoms_Logo-1-e1551353509444.png",
+              imageFit: "contain",
+              imageHeight: 76,
+              imageWidth: 80,
+              width: "100px",
+            },
+            {
+              type: "panel",
+              name: "first_page_container_panel",
+              elements: [
+                {
+                  type: "panel",
+                  name: "data_collector_information",
+                  elements: [
+                    {
+                      type: "text",
+                      name: "company_name",
+                      title: "Company Name",
+                    },
+                    {
+                      type: "text",
+                      name: "contact_name",
+                      title: "Name of Contact",
+                    },
+                    {
+                      type: "text",
+                      name: "position",
+                      title: "Position",
+                      inputType: "text",
+                    },
+                  ],
+                  title: "Customer Information",
+                  showNumber: true,
+                  showQuestionNumbers: "off",
+                },
+              ],
+              startWithNewLine: false,
+            },
+          ],
+        },
+        {
           questions: [
             {
               type: "rating",
