@@ -16,7 +16,7 @@ export default {
   data() {
     const json = {
       title: "Anchor Telecoms Customer Survey",
-      description: "Please ",
+      description: "Please rate your satisfication with us",
       logo:
         "http://anchortelecoms.com/wp-content/uploads/2019/02/Anchor-Telecoms_Logo-1-e1551353509444.png",
       logoFit: "contain",
