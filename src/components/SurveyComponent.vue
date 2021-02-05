@@ -15,22 +15,20 @@ export default {
   name: "surveyjs-component",
   data() {
     const json = {
+      title: "Anchor Telecoms Customer Survey",
+      description: "Please ",
+      logo:
+        "http://anchortelecoms.com/wp-content/uploads/2019/02/Anchor-Telecoms_Logo-1-e1551353509444.png",
+      logoFit: "contain",
+      logoHeight: 76,
+      logoWidth: 80,
+      width: "100px",
       pages: [
         {
           name: "page1",
           navigationTitle: "Customer",
           navigationDescription: "Customer's info",
           elements: [
-            {
-              type: "image",
-              name: "first_page_image",
-              imageLink:
-                "http://anchortelecoms.com/wp-content/uploads/2019/02/Anchor-Telecoms_Logo-1-e1551353509444.png",
-              imageFit: "contain",
-              imageHeight: 76,
-              imageWidth: 80,
-              width: "100px",
-            },
             {
               type: "panel",
               name: "first_page_container_panel",
@@ -43,17 +41,20 @@ export default {
                       type: "text",
                       name: "company_name",
                       title: "Company Name",
+                      isRequired: true,
                     },
                     {
                       type: "text",
                       name: "contact_name",
                       title: "Name of Contact",
+                      isRequired: true,
                     },
                     {
                       type: "text",
                       name: "position",
                       title: "Position",
                       inputType: "text",
+                      isRequired: true,
                     },
                   ],
                   title: "Customer Information",
