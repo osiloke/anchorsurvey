@@ -280,10 +280,18 @@ export default {
         const question = result.getQuestionByName(name);
         return { title: question.title, name, answer, answerName };
       });
+      const email = result.data["email"];
+      const contactName = result.data["contact_name"];
+      const companyName = result.data["company_name"];
       return axios
         .post(
           "https://api.dostow.com/v1/store/surveyanswer",
-          { answers },
+          {
+            answers,
+            email,
+            contactName,
+            companyName,
+          },
           {
             headers: {
               "x-dostow-group-access-key":
