@@ -254,12 +254,6 @@ export default {
               name: "suggestions",
               title: "What would make you more satisfied with our services",
             },
-            {
-              type: "text",
-              name: "email",
-              title:
-                "Thank you for taking our survey. Your survey is almost complete, please enter your email address in the box below if you would like a feedback, then press the 'Submit' button.",
-            },
           ],
         },
       ],
